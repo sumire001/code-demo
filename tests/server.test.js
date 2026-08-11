@@ -4,7 +4,7 @@
  * Strategy: spawn the real entrypoint (`node src/index.js`) as a child process,
  * parse the listening URL from its stdout, then exercise the API over HTTP.
  * This exercises the full stack — including the Bearer-token auth plugin that
- * returns HTTP 401 — exactly as a reviewer would.
+ * returns HTTP 401.
  */
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
